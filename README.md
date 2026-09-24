@@ -1,4 +1,8 @@
+
 # Desarrollo de Predicados en Python
+
+# Desarrollo-de-predicados-en-python
+
 
 ## ¿Qué es este proyecto?
 
@@ -69,13 +73,3 @@ Al final, imprimimos preguntas positivas (que esperamos que sean `True`) y negat
 - **Agregar nuevos predicados**: Copia una de las funciones existentes, cambia su nombre y lógica según necesites.
 - **Probar otras consultas**: Modifica la sección de "Consultas" al final para hacer tus propias preguntas.
 
-## Ideas para extender el proyecto (si te interesa)
-
-- Permitir que el usuario ingrese consultas desde el teclado.
-- Guardar la base de conocimientos en un archivo externo (JSON o CSV).
-- Añadir más tipos de relaciones (por ejemplo, "es amigo de", "tiene edad mayor que").
-- Usar conjuntos (`set`) en lugar de listas para búsquedas más rápidas.
-
----
-
-¡Diviértete experimentando con la lógica! Si tienes dudas, puedes mirar el código comentado o preguntar a un compañero o profesor.
