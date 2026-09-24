@@ -2,7 +2,7 @@
 # 1. UNIVERSO DE DISCURSO Y BASE DE CONOCIMIENTO (HECHOS)
 # ==========================================
 
-# Dominios / Universos[cite: 2]
+# Dominios / Universos
 estudiantes = ["sofia", "diego", "luis", "paula", "miguel", "elena", "carlos", "ana", "jorge", "maria"]
 actividades = ["practicaLab3", "seminarioRobotica"]
 grupos = ["grupoC", "grupoA"]
@@ -10,7 +10,7 @@ comites = ["comiteEtica", "comiteCurricular"]
 cursos = ["Proyectos I", "programacionAvanzada"]
 recursos = ["LaboratorioIA", "BibliotecaDigital"]
 
-# Hechos (Base de conocimiento)[cite: 1]
+# Hechos (Base de conocimiento)
 asiste_a_hechos = {
     "sofia": ["practicaLab3"]
 }
@@ -37,23 +37,23 @@ solicita_extension_hechos = {
 # ==========================================
 
 def AsisteA(alumno, actividad):
-    """E x Act -> 'el estudiante x asiste a la actividad a'[cite: 2]"""
+    """E x Act -> 'el estudiante x asiste a la actividad a'"""
     return actividad in asiste_a_hechos.get(alumno, [])
 
 def EsTutorDe(alumno, grupo):
-    """E x G -> 'el estudiante x es tutor del grupo g'[cite: 2]"""
+    """E x G -> 'el estudiante x es tutor del grupo g'"""
     return grupo in es_tutor_de_hechos.get(alumno, [])
 
 def TieneCreditos(alumno, cant):
-    """E x N -> 'el estudiante x posee n créditos aprobados'[cite: 2]"""
+    """E x N -> 'el estudiante x posee n créditos aprobados'"""
     return tiene_creditos_hechos.get(alumno) == cant
 
 def EsMiembroDe(alumno, comite):
-    """E x Cmt -> 'el estudiante x es miembro del comité c'[cite: 2]"""
+    """E x Cmt -> 'el estudiante x es miembro del comité c'"""
     return comite in es_miembro_de_hechos.get(alumno, [])
 
 def SolicitaExtension(alumno, asignatura):
-    """E x C -> 'el estudiante x solicita extensión para la asignatura c'[cite: 2]"""
+    """E x C -> 'el estudiante x solicita extensión para la asignatura c'"""
     return asignatura in solicita_extension_hechos.get(alumno, [])
 
 
